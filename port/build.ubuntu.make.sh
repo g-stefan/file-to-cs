@@ -17,4 +17,4 @@ cmdX(){
 	fi
 }
 
-cmdX xyo-cc --mode=$ACTION @source/file-to-cs.compile.info
+cmdX xyo-cc --mode=$ACTION @source/file-to-cs.compile
