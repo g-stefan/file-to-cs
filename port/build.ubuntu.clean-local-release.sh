@@ -3,7 +3,6 @@
 # http://unlicense.org/
 # Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo "-> clean file-to-cs"
+echo "-> clean-local-release file-to-cs"
 
-rm -rf bin
-rm -rf build
+rm -rf release
