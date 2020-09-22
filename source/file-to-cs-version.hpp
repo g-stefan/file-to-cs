@@ -10,10 +10,10 @@
 #ifndef FILE_TO_CS_VERSION_HPP
 #define FILE_TO_CS_VERSION_HPP
 
-#define FILE_TO_CS_VERSION_ABCD                1,1,0,4
-#define FILE_TO_CS_VERSION_STR                 "1.1.0"
-#define FILE_TO_CS_VERSION_STR_BUILD           "4"
-#define FILE_TO_CS_VERSION_STR_DATETIME        "2020-09-21 17:38:56"
+#define FILE_TO_CS_VERSION_ABCD                1,2,0,5
+#define FILE_TO_CS_VERSION_STR                 "1.2.0"
+#define FILE_TO_CS_VERSION_STR_BUILD           "5"
+#define FILE_TO_CS_VERSION_STR_DATETIME        "2020-09-22 03:30:18"
 
 #ifndef XYO_RC
 
