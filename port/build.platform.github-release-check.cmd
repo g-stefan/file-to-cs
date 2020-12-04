@@ -5,7 +5,7 @@ rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
 SETLOCAL ENABLEDELAYEDEXPANSION
 
-echo -^> git-release-check file-to-cs
+echo -^> github-release-check file-to-cs
 
 set PROJECT=file-to-cs
 if not exist source\%PROJECT%.version.ini echo Error - no version & exit 1
