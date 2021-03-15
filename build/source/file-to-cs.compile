@@ -1,3 +1,3 @@
 --exe file-to-cs
---use-path=source
 --use-project=xyo.static
+--output-bin-path-is-output
