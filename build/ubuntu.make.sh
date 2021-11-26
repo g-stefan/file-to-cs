@@ -8,7 +8,7 @@ if [ "$ACTION" = "" ]; then
 	ACTION=make
 fi
 
-echo "-> $ACTION file-to-cs"
+echo "- $BUILD_PROJECT > $ACTION"
 
 cmdX(){
 	if ! "$@" ; then
@@ -16,5 +16,8 @@ cmdX(){
 		exit 1
 	fi
 }
+
+[ -d output ] || mkdir -p output
+[ -d temp ] || mkdir -p temp
 
 cmdX xyo-cc --mode=$ACTION @build/source/file-to-cs.compile
