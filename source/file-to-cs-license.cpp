@@ -9,7 +9,7 @@
 
 #include "file-to-cs-license.hpp"
 
-namespace FileToCs {
+namespace FileToCS {
 
 	static const char *license_ =
 		"\r\n"

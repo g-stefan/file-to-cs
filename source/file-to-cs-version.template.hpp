@@ -17,7 +17,7 @@
 
 #ifndef XYO_RC
 
-namespace FileToCs {
+namespace FileToCS {
 	namespace Version {
 		const char *version();
 		const char *build();

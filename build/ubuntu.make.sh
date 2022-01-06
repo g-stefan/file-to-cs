@@ -21,3 +21,4 @@ cmdX(){
 [ -d temp ] || mkdir -p temp
 
 cmdX xyo-cc --mode=$ACTION @build/source/file-to-cs.compile
+cmdX xyo-cc --mode=$ACTION @build/source/file-to-cs.library.compile

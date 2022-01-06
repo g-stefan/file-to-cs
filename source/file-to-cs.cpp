@@ -12,41 +12,46 @@
 #include <string.h>
 
 #include "xyo.hpp"
+#include "file-to-cs.hpp"
 #include "file-to-cs-copyright.hpp"
 #include "file-to-cs-license.hpp"
-#include "file-to-cs-version.hpp"
+#ifndef FILE_TO_CS_NO_VERSION
+#	include "file-to-cs-version.hpp"
+#endif
 
-namespace Main {
+namespace FileToCS {
 
 	using namespace XYO;
 
-	class Application :
-		public virtual IMain {
-			XYO_DISALLOW_COPY_ASSIGN_MOVE(Application);
-		public:
-
-			inline Application() {};
-
-			void showUsage();
-			void showLicense();
-
-			int main(int cmdN, char *cmdS[]);
-	};
-
 	void Application::showUsage() {
 		printf("file-to-cs - Convert file to C/C++ source\n");
-		printf("version %s build %s [%s]\n", FileToCs::Version::version(), FileToCs::Version::build(), FileToCs::Version::datetime());
-		printf("%s\n\n", FileToCs::Copyright::fullCopyright());
+		showVersion();
+		printf("%s\n\n", FileToCS::Copyright::fullCopyright());
 
 		printf("%s",
 			"options:\n"
+			"    --usage             this info\n"
 			"    --license           show license\n"
+			"    --version           show version\n"
+			"    --name=name         string variable name\n"
+			"    --file-in=file      input file\n"
+			"    --file-out=file     output file\n"
+			"    --touch=file        touch file if changed input file\n"
+			"    --append            append content\n"
+			"    --is-string         encode as string\n"
+			"    --is-string-direct  encode as c string with escape codes\n"
 		);
 		printf("\n");
 	};
 
 	void Application::showLicense() {
-		printf("%s", FileToCs::License::content());
+		printf("%s", FileToCS::License::content());
+	};
+
+	void Application::showVersion() {
+#ifndef FILE_TO_CS_NO_VERSION
+		printf("version %s build %s [%s]\n", FileToCS::Version::version(), FileToCS::Version::build(), FileToCS::Version::datetime());
+#endif
 	};
 
 	int Application::main(int cmdN, char *cmdS[]) {
@@ -72,14 +77,18 @@ namespace Main {
 					optValue = String::substring(opt, optIndex + 1);
 					opt = String::substring(opt, 0, optIndex);
 				};
-				if (opt == "license") {
-					showLicense();
-					return 0;
-				};
 				if (opt == "usage") {
 					showUsage();
 					return 0;
 				};
+				if (opt == "license") {
+					showLicense();
+					return 0;
+				};
+				if (opt == "version") {
+					showVersion();
+					return 0;
+				};				
 				if (opt == "name") {
 					stringName = optValue;
 					if(stringName.length() == 0) {
@@ -174,4 +183,7 @@ namespace Main {
 
 };
 
-XYO_APPLICATION_MAIN_STD(Main::Application);
+#ifndef FILE_TO_CS_LIBRARY
+XYO_APPLICATION_MAIN_STD(FileToCS::Application);
+#endif
+

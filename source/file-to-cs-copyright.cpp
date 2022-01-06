@@ -9,7 +9,7 @@
 
 #include "file-to-cs-copyright.hpp"
 
-namespace FileToCs {
+namespace FileToCS {
 
 	static const char *copyright_ = "Copyright (c) Grigore Stefan";
 	static const char *publisher_ = "Grigore Stefan";

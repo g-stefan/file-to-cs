@@ -10,7 +10,7 @@
 #ifndef FILE_TO_CS_LICENSE_HPP
 #define FILE_TO_CS_LICENSE_HPP
 
-namespace FileToCs {
+namespace FileToCS {
 	namespace License {
 		const char *content();
 		const char *shortContent();

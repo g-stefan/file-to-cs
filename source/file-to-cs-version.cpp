@@ -9,7 +9,7 @@
 
 #include "file-to-cs-version.hpp"
 
-namespace FileToCs {
+namespace FileToCS {
 	namespace Version {
 
 		static const char *version_ = "1.11.0";
