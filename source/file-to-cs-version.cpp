@@ -12,10 +12,10 @@
 namespace FileToCS {
 	namespace Version {
 
-		static const char *version_ = "1.11.0";
-		static const char *build_ = "24";
-		static const char *versionWithBuild_ = "1.11.0.24";
-		static const char *datetime_ = "2022-01-01 21:19:32";
+		static const char *version_ = "1.13.0";
+		static const char *build_ = "30";
+		static const char *versionWithBuild_ = "1.13.0.30";
+		static const char *datetime_ = "2022-01-09 01:13:03";
 
 		const char *version() {
 			return version_;
