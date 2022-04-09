@@ -10,11 +10,11 @@
 #ifndef FILE_TO_CS_COPYRIGHT_HPP
 #define FILE_TO_CS_COPYRIGHT_HPP
 
-#define FILE_TO_CS_COPYRIGHT            "Copyright (c) Grigore Stefan"
-#define FILE_TO_CS_PUBLISHER            "Grigore Stefan"
-#define FILE_TO_CS_COMPANY              FILE_TO_CS_PUBLISHER
-#define FILE_TO_CS_CONTACT              "g_stefan@yahoo.com"
-#define FILE_TO_CS_FULL_COPYRIGHT       FILE_TO_CS_COPYRIGHT " <" FILE_TO_CS_CONTACT ">"
+#define FILE_TO_CS_COPYRIGHT "Copyright (c) Grigore Stefan"
+#define FILE_TO_CS_PUBLISHER "Grigore Stefan"
+#define FILE_TO_CS_COMPANY FILE_TO_CS_PUBLISHER
+#define FILE_TO_CS_CONTACT "g_stefan@yahoo.com"
+#define FILE_TO_CS_FULL_COPYRIGHT FILE_TO_CS_COPYRIGHT " <" FILE_TO_CS_CONTACT ">"
 
 #ifndef XYO_RC
 

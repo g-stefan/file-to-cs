@@ -10,10 +10,10 @@
 #ifndef FILE_TO_CS_VERSION_HPP
 #define FILE_TO_CS_VERSION_HPP
 
-#define FILE_TO_CS_VERSION_ABCD                1,13,0,30
-#define FILE_TO_CS_VERSION_STR                 "1.13.0"
-#define FILE_TO_CS_VERSION_STR_BUILD           "30"
-#define FILE_TO_CS_VERSION_STR_DATETIME        "2022-01-09 01:13:03"
+#define FILE_TO_CS_VERSION_ABCD 1,14,0,34
+#define FILE_TO_CS_VERSION_STR "1.14.0"
+#define FILE_TO_CS_VERSION_STR_BUILD "34"
+#define FILE_TO_CS_VERSION_STR_DATETIME "2022-04-04 01:44:47"
 
 #ifndef XYO_RC
 
@@ -28,4 +28,3 @@ namespace FileToCS {
 
 #endif
 #endif
-

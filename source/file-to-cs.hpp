@@ -16,14 +16,13 @@ namespace FileToCS {
 
 	using namespace XYO;
 
-	class Application :
-		public virtual IMain {
+	class Application : public virtual IMain {
 			XYO_DISALLOW_COPY_ASSIGN_MOVE(Application);
+
 		public:
+			inline Application(){};
 
-			inline Application() {};
-
-			void showUsage();			
+			void showUsage();
 			void showLicense();
 			void showVersion();
 
@@ -33,4 +32,3 @@ namespace FileToCS {
 };
 
 #endif
-
