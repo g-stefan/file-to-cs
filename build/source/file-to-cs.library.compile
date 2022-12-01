@@ -1,7 +1,0 @@
---lib file-to-cs
---def=FILE_TO_CS_LIBRARY
---src-hpp=source/file-to-cs.hpp
---build-include
---no-default-include
---install-include-direct
---use-project=xyo.static

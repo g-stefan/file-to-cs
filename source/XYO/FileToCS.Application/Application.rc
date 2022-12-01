@@ -1,0 +1,11 @@
+// File to CS
+// Copyright (c) 2022 Grigore Stefan <g_stefan@yahoo.com>
+// MIT License (MIT) <http://opensource.org/licenses/MIT>
+// SPDX-FileCopyrightText: 2022 Grigore Stefan <g_stefan@yahoo.com>
+// SPDX-License-Identifier: MIT
+
+#include <XYO/FileToCS.Application/Application.rh>
+#include <XYO/FileToCS.Application/Copyright.rh>
+#include <XYO/FileToCS.Application/Version.rh>
+
+XYO_APPLICATION_VERSION_INFO(XYO_FILETOCS_APPLICATION,"file-to-cs.exe","FileToCS - Convert file to C/C++ source")
