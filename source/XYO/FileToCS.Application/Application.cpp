@@ -15,7 +15,7 @@ namespace XYO::FileToCS::Application {
 	void Application::showUsage() {
 		printf("FileToCS - Convert file to C/C++ source\n");
 		showVersion();
-		printf("%s\n\n", FileToCS::Application::Copyright::fullCopyright());
+		printf("%s\n\n", FileToCS::Application::Copyright::copyright());
 
 		printf("%s",
 		       "options:\n"
@@ -33,7 +33,7 @@ namespace XYO::FileToCS::Application {
 	};
 
 	void Application::showLicense() {
-		printf("%s%s", FileToCS::Application::License::licenseHeader(), FileToCS::Application::License::licenseBody());
+		printf("%s", FileToCS::Application::License::license());
 	};
 
 	void Application::showVersion() {
