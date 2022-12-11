@@ -57,9 +57,10 @@ namespace XYO::FileToCS {
 				index %= 32;
 
 				if (isString) {
-					if (index > 0) {
-						fprintf(output, ",0x00");
+					if (!first) {
+						fprintf(output, ",");
 					};
+					fprintf(output, "0x00");
 				};
 
 				fprintf(output, "\n};\n");
