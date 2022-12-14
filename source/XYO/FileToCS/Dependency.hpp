@@ -14,7 +14,7 @@
 // -- Export
 
 #ifndef XYO_FILETOCS_INTERNAL
-#	ifdef FILE_TO_CS_LIBRARY_INTERNAL
+#	ifdef FILE_TO_CS_INTERNAL
 #		define XYO_FILETOCS_INTERNAL
 #	endif
 #endif
