@@ -160,14 +160,10 @@ namespace XYO::FileToCS::Application {
 		};
 
 		if (isTouch) {
-			if (Shell::fileExists(touchFileName)) {
-				if (Shell::compareLastWriteTime(touchFileName, fileNameIn) >= 0) {
-					if (Shell::fileExists(fileNameOut)) {
-						if (Shell::compareLastWriteTime(touchFileName, fileNameOut) >= 0) {
-							return 0;
-						};
-					};
-				};
+			if (Shell::fileExists(fileNameOut)) {
+				if (Shell::compareLastWriteTime(fileNameIn, fileNameOut) <= 0) {
+					return 0;
+				};			
 			};
 		};
 
