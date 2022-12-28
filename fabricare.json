@@ -12,7 +12,8 @@
 				"dependency" : [
 					"xyo-system"
 				],
-				"versionName" : "file-to-cs.library"
+				"versionName" : "file-to-cs.library",
+				"noRelease" : true
 			},
 			{
 				"name" : "file-to-cs.application",
@@ -26,7 +27,8 @@
 				"defines" : [
 					"XYO_FILETOCS_APPLICATION_LIBRARY"
 				],
-				"linkVersion" : "file-to-cs"
+				"linkVersion" : "file-to-cs",
+				"noRelease" : true
 			},
 			{
 				"name" : "file-to-cs",
