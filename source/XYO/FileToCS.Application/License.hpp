@@ -13,8 +13,8 @@
 
 namespace XYO::FileToCS::Application::License {
 
-	const char *license();
-	const char *shortLicense();
+	std::string license();
+	std::string shortLicense();
 
 };
 
