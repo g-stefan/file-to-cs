@@ -79,7 +79,7 @@ namespace XYO::FileToCS {
 			if (Shell::filePutContents(fileNameOut, "static const char *")) {
 				if (Shell::filePutContentsAppend(fileNameOut, stringName)) {
 					if (Shell::filePutContentsAppend(fileNameOut, "=")) {
-						if (Shell::filePutContentsAppend(fileNameOut, String::encodeC(content))) {
+						if (Shell::filePutContentsAppend(fileNameOut, StringX::encodeC(content))) {
 							return Shell::filePutContentsAppend(fileNameOut, ";\r\n");
 						};
 					};
@@ -92,7 +92,7 @@ namespace XYO::FileToCS {
 	bool fileToCStringDirect(const char *fileNameIn, const char *fileNameOut) {
 		String content;
 		if (Shell::fileGetContents(fileNameIn, content)) {
-			return Shell::filePutContents(fileNameOut, String::encodeC(content));
+			return Shell::filePutContents(fileNameOut, StringX::encodeC(content));
 		};
 		return false;
 	};
