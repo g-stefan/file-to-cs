@@ -12,10 +12,10 @@
 #endif
 
 namespace XYO::FileToCS::Copyright {
-	const char *copyright();
-	const char *publisher();
-	const char *company();
-	const char *contact();
+	XYO_FILETOCS_EXPORT const char *copyright();
+	XYO_FILETOCS_EXPORT const char *publisher();
+	XYO_FILETOCS_EXPORT const char *company();
+	XYO_FILETOCS_EXPORT const char *contact();
 };
 
 #endif

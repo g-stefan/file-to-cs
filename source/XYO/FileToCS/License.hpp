@@ -13,8 +13,8 @@
 
 namespace XYO::FileToCS::License {
 
-	std::string license();
-	std::string shortLicense();
+	XYO_FILETOCS_EXPORT std::string license();
+	XYO_FILETOCS_EXPORT std::string shortLicense();
 
 };
 
