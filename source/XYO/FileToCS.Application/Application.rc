@@ -8,5 +8,5 @@
 #include <XYO/FileToCS.Application/Copyright.rh>
 #include <XYO/FileToCS.Application/Version.rh>
 
-XYO_APPLICATION_VERSION_INFO(XYO_FILETOCS_APPLICATION,"file-to-cs.exe","FileToCS - Convert file to C/C++ source")
-XYO_APPLICATION_MANIFEST("Application.manifest")
+XYO_PLATFORM_VERSION_INFO(XYO_FILETOCS_APPLICATION,"file-to-cs.exe","FileToCS - Convert file to C/C++ source")
+XYO_PLATFORM_MANIFEST("Application.manifest")

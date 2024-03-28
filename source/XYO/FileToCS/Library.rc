@@ -8,4 +8,4 @@
 #include <XYO/FileToCS/Copyright.rh>
 #include <XYO/FileToCS/Version.rh>
 
-XYO_APPLICATION_VERSION_INFO(XYO_FILETOCS,"xyo-file-to-cs.dll","FileToCS - Convert file to C/C++ source")
+XYO_PLATFORM_VERSION_INFO(XYO_FILETOCS,"xyo-file-to-cs.dll","FileToCS - Convert file to C/C++ source")
