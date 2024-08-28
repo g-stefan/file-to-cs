@@ -5,16 +5,16 @@
 		"projects" : [
 			{
 				"name" : "file-to-cs",
-				"make" : "lib",
+				"make" : "dll-or-lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/FileToCS",
 				"dependency" : [
 					"xyo-system"
 				],
-				"versionName" : "file-to-cs.library"
+				"versionName" : "file-to-cs.library"			
 			},
 			{
-				"name" : "file-to-cs.application",
+				"name" : "file-to-cs.application.static",
 				"make" : "lib",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/FileToCS.Application",
@@ -28,7 +28,7 @@
 			},
 			{
 				"name" : "file-to-cs",
-				"make" : "exe.static",
+				"make" : "exe",
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/FileToCS.Application",
 				"dependency" : [
