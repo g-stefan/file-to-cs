@@ -11,7 +11,22 @@
 				"dependency" : [
 					"xyo-system"
 				],
-				"versionName" : "file-to-cs.library"			
+				"versionName" : "file-to-cs.library"
+			},
+			{
+				"name": "file-to-cs.static",
+				"make": "lib",
+				"category": "make",
+				"SPDX-License-Identifier": "MIT",
+				"sourcePath" : "XYO/FileToCS",
+				"dependency" : [
+					"xyo-system.static"
+				],
+				"dependencyDefines" : [
+					"XYO_FILETOCS_LIBRARY"
+				],
+				"linkVersion": "file-to-cs.library",
+				"crt": "static"
 			},
 			{
 				"name" : "file-to-cs.application.static",
@@ -19,12 +34,13 @@
 				"SPDX-License-Identifier": "MIT",
 				"sourcePath" : "XYO/FileToCS.Application",
 				"dependency" : [
-					"file-to-cs"
+					"file-to-cs.static"
 				],
-				"defines" : [
+				"dependencyDefines" : [
 					"XYO_FILETOCS_APPLICATION_LIBRARY"
 				],
-				"linkVersion" : "file-to-cs"
+				"linkVersion" : "file-to-cs",
+				"crt": "static"
 			},
 			{
 				"name" : "file-to-cs",
