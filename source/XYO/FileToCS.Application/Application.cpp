@@ -41,6 +41,22 @@ namespace XYO::FileToCS::Application {
 		printf("version %s build %s [%s]\n", FileToCS::Application::Version::version(), FileToCS::Application::Version::build(), FileToCS::Application::Version::datetime());
 	};
 
+	// The library reports only success or failure, find the most likely cause
+	static void showConversionError(const String &fileNameIn, const String &fileNameOut) {
+		if (!Shell::fileExists(fileNameIn)) {
+			printf("Error: file not found - %s\n", fileNameIn.value());
+			return;
+		};
+		String pathOut = Shell::getFilePath(fileNameOut);
+		if (pathOut.length() > 0) {
+			if (!Shell::directoryExists(pathOut)) {
+				printf("Error: directory not found - %s\n", pathOut.value());
+				return;
+			};
+		};
+		printf("Error: unable to read %s or write %s\n", fileNameIn.value(), fileNameOut.value());
+	};
+
 	void Application::initMemory() {
 		String::initMemory();
 		TDynamicArray<String>::initMemory();
@@ -177,12 +193,14 @@ namespace XYO::FileToCS::Application {
 			        fileNameOut,
 			        append,
 			        isString)) {
+				showConversionError(fileNameIn, fileNameOut);
 				return 1;
 			};
 		} else {
 			if (!fileToCStringDirect(
 			        fileNameIn,
 			        fileNameOut)) {
+				showConversionError(fileNameIn, fileNameOut);
 				return 1;
 			};
 		};
