@@ -1,6 +1,5 @@
 {
 	"solution" : {
-		"namespace" : "xyo",
 		"name" : "file-to-cs",
 		"type" : "xyo-cpp",
 		"projects" : [
